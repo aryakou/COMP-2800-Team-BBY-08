@@ -1,0 +1,68 @@
+{
+  "particles":{
+    "number":{
+      "value":400
+    },
+    "color":{
+      "value":"#c61951"
+    },
+    "shape":{
+      "type":"circle",
+      
+      
+      "image":{
+        "src":"http://www.iconsdb.com/icons/preview/white/contacts-xxl.png"
+      }
+    },
+    "opacity":{
+      "value":0.1,
+      "random":true,
+      "anim":{
+        "enable":true,
+        "speed":10
+      }
+    },
+    "size":{
+      "value": 1,
+      "random":true,
+      "anim":{
+        "enable": true,
+        "speed":10
+      }
+    },
+    "line_linked":{
+      "enable": true,
+      "distance": 80,
+      "color":"#c61951",
+      "width":1
+    },
+    "move":{
+      "enable":true,
+      "speed":2.5,
+      "direction":"none",
+      "straight":false
+    }
+  },
+  "interactivity":{
+    "events":{
+      "onhover":{
+        "enable":true,
+        "mode":"repulse"
+      },
+      "onclick":{
+        "enable": true,
+        "mode":"push"
+      }
+    },
+    "modes":{
+      "repulse":{
+        "distance":30,
+        "duration":0.5
+      },
+      "bubble":{
+        "distance":100,
+        "size":10
+      }
+    }
+  }
+}
