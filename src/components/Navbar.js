@@ -7,7 +7,7 @@ export default class Navbar extends Component {
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <a className="navbar-item" href="/">
-            <img src="https://cdn.clipart.email/f1cbcbc9ac3e297b2967f5c8a4f5ddc2_green-post-it-note-png-picture-671876-sticky-clipart_600-580.png" width="112" height="28" alt="GreenNotes Logo" />
+            <img src="https://media.forgecdn.net/attachments/122/440/notes_logo.png" width="112" height="28" alt="GreenNotes Logo" />
           </a>
         </div>
 

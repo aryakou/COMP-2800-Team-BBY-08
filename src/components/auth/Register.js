@@ -73,7 +73,17 @@ class Register extends Component {
     return (
       <section className="section auth">
       <h1 class='secondary'>Register</h1>
+      <div id='textDiv'>
 
+      <ul class='tritery'>
+        <li><img src='https://image.flaticon.com/icons/svg/126/126483.svg' height='25px' width='25px'></img>Take notes dynamically</li>
+        <li><img src='https://image.flaticon.com/icons/svg/126/126503.svg' height='25px' width='25px'></img>Organize your thoughts</li>
+        <li><img src='https://image.flaticon.com/icons/svg/126/126475.svg' height='25px' width='25px'></img>Be more productive </li>
+
+      </ul>
+
+
+      </div>
         <div className="container">
           <FormErrors formerrors={this.state.errors} />
 

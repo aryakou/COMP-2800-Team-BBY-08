@@ -1,7 +1,10 @@
 import React from 'react'
+import './footerStyle.css';
 
 export default function Footer() {
   return (
+
+
     <footer className="footer">
       <div className="content has-text-centered">
         <p>
@@ -9,5 +12,7 @@ export default function Footer() {
         </p>
       </div>
     </footer>
+
+    
   )
 }
