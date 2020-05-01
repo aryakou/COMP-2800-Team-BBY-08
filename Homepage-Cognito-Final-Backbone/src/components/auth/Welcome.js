@@ -5,7 +5,8 @@ export default function Welcome() {
     <section className="section auth">
       <div className="container">
         <h1>Welcome!</h1>
-        <p>You have successfully registered a new account.</p>
+        <p>You have successfully registered an account with GreenNote.</p>
+        <p>Please verify using the link we've emailed to you.</p>
       </div>
     </section>
   )
