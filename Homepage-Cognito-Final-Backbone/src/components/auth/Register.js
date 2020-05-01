@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import FormErrors from "../FormErrors";
 import Validate from "../utility/FormValidation";
 import { Auth } from 'aws-amplify';
+import './loginStyle.css';
 
 class Register extends Component {
   state = {
@@ -72,8 +73,19 @@ class Register extends Component {
   render() {
     return (
       <section className="section auth">
+           <h1 class='secondary'>Register</h1>
+      <div id='textDiv'>
+
+      <ul class='tritery'>
+        <li><img src='https://image.flaticon.com/icons/svg/126/126483.svg' height='25px' width='25px'></img>Take notes dynamically</li>
+        <li><img src='https://image.flaticon.com/icons/svg/126/126503.svg' height='25px' width='25px'></img>Organize your thoughts</li>
+        <li><img src='https://image.flaticon.com/icons/svg/126/126475.svg' height='25px' width='25px'></img>Be more productive </li>
+
+      </ul>
+
+
+      </div>
         <div className="container">
-          <h1>Register</h1>
           <FormErrors formerrors={this.state.errors} />
 
           <form onSubmit={this.handleSubmit}>
@@ -138,14 +150,14 @@ class Register extends Component {
             </div>
             <div className="field">
               <p className="control">
-                <a href="/forgotpassword">Forgot password?</a>
+                <button className="button is-success">
+                  Register
+                </button>
               </p>
             </div>
             <div className="field">
               <p className="control">
-                <button className="button is-success">
-                  Register
-                </button>
+                <a href="/forgotpassword">Forgot password?</a>
               </p>
             </div>
           </form>

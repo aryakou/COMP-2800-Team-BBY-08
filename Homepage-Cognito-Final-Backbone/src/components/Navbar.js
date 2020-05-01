@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Auth } from 'aws-amplify';
+import './navStyle.css';
 
 export default class Navbar extends Component {
   logUserOut = async event => {
