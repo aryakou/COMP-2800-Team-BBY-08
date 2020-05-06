@@ -27,9 +27,9 @@ export default function About() {
       <div class="team_img">
         <img src="https://image.flaticon.com/icons/svg/23/23171.svg" alt="Team_image"/>
       </div>
-      <h3>Sandher</h3>
-      <p class="role">developer</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+      <h3>Gurjot Sandher</h3>
+      <p class="role">Cloud Architect</p>
+      <p>From sciences to software. I recently completed my Term 2 at the British Columbia Institute of Technology's Computer Systems Technology program. I'm a part of the Green Notes back-end team and we used AWS to create this serverless app.</p>
     </div>
     <div class="team_member">
       <div class="team_img">
