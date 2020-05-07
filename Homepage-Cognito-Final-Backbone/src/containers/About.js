@@ -35,9 +35,9 @@ export default function About() {
       <div class="team_img">
         <img src="https://image.flaticon.com/icons/svg/22/22999.svg" alt="Team_image"/>
       </div>
-      <h3>Mander</h3>
+      <h3>Gurjot Mander</h3>
       <p class="role">developer</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+      <p>I am currently enrolled at BCIT in the CST program. I have just completed term 1 and moving on to term 2. I am a part of the frontend developing team, and enjoy taking part in this project.</p>
     </div>
   </div>
 
