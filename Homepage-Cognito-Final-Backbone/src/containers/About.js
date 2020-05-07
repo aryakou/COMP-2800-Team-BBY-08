@@ -19,9 +19,9 @@ export default function About() {
       <div class="team_img">
         <img src="https://image.flaticon.com/icons/svg/23/23171.svg" alt="Team_image"/>
       </div>
-      <h3>Arya</h3>
+      <h3>Arya Koukia</h3>
       <p class="role">developer</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+      <p>Coming from a software background, GreenNote is one of the first group projects that I am involved in. I am ecstatic to show you all what we have in store and what the future holds.</p>
     </div>
     <div class="team_member">
       <div class="team_img">
