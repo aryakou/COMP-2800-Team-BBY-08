@@ -17,7 +17,8 @@ export default function About() {
         <img src={logo} alt="Team_image"/>
       </div>
       <h3>Our Story</h3>
-      <p>Meta MoLog is an app created for those struggling with staying organized during this unprecedented time. With Meta MoLog, users can have confidence that their notes and attachments are 100% secured on the cloud and our privacy standard is an all time high. Users can securely sign up, log in, and create notes to stay up to date with all of their tasks.</p>
+      <p>Meta Molog is an app created for those struggling with getting through this unprecedented times. With Meta Molog, users can have confidence that their journal entries and attachments are 100% secured on the cloud and our privacy standard is an all time high. Users can sign up, log in and create entries that are only visible by them. With our multiple steps of authentication, Meta Molog is the best option on the market.
+</p>
     </div>
     <div className="team_member">
       <div className="team_img">
