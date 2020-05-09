@@ -58,9 +58,8 @@ body{
   top: -50px;
   left: 50%;
   transform: translateX(-50%);
-  width: 50px;
-  height: 50px;
-  border-radius: 5%;
+  /* width: 50px;
+  height: 50px; */
   background: #fff;
 }
 
@@ -72,6 +71,5 @@ body{
 
 #myImg {
   width: 200px;
-  border-radius: 25%;
-
+  border-radius: 50%;
 }
