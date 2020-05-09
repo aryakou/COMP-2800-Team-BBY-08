@@ -1,5 +1,10 @@
 import React from "react";
 import "./About.css";
+import logo from './MML.png';
+import gsand from'./gsand.png';
+import mander from './gmander.png';
+import arash from './arash.png';
+import arya from './arya.png';
 
 export default function About() {
     return (
@@ -7,9 +12,16 @@ export default function About() {
 <div className="wrapper">
   <h1>Our Team</h1>
   <div className="team">
+  <div className="team_member">
+      <div className="team_img">
+        <img src={logo} alt="Team_image"/>
+      </div>
+      <h3>Our Story</h3>
+      <p>Meta MoLog is an app created for those struggling with staying organized during this unprecedented time. With Meta MoLog, users can have confidence that their notes and attachments are 100% secured on the cloud and our privacy standard is an all time high. Users can securely sign up, log in, and create notes to stay up to date with all of their tasks.</p>
+    </div>
     <div className="team_member">
       <div className="team_img">
-        <img src="https://image.flaticon.com/icons/svg/23/23171.svg" alt="Team_image"/>
+        <img src={arash} id="myImg" alt="Team_image"/>
       </div>
       <h3>Arash</h3>
       <p className="role">Front-End Developer</p>
@@ -17,7 +29,7 @@ export default function About() {
     </div>
     <div className="team_member">
       <div className="team_img">
-        <img src="https://image.flaticon.com/icons/svg/23/23171.svg" alt="Team_image"/>
+        <img src={arya} id="myImg" alt="Team_image"/>
       </div>
       <h3>Arya</h3>
       <p className="role">Cloud Developer</p>
@@ -25,7 +37,7 @@ export default function About() {
     </div>
     <div className="team_member">
       <div className="team_img">
-        <img src="https://image.flaticon.com/icons/svg/23/23171.svg" alt="Team_image"/>
+        <img src={gsand} id="myImg" alt="Team_image"/>
       </div>
       <h3>Gurjot Sandher</h3>
       <p className="role">Cloud Developer</p>
@@ -33,7 +45,7 @@ export default function About() {
     </div>
     <div className="team_member">
       <div className="team_img">
-        <img src="https://image.flaticon.com/icons/svg/22/22999.svg" alt="Team_image"/>
+        <img src={mander} id="myImg" alt="Team_image"/>
       </div>
       <h3>Gurjot Mander</h3>
       <p className="role">Front-End Developer</p>
