@@ -98,7 +98,7 @@ export default function Notes() {
     event.preventDefault();
   
     const confirmed = window.confirm(
-      "Are you sure you want to delete this note?"
+      "This day will manifest in history, do you wish to forget it?"
     );
   
     if (!confirmed) {
