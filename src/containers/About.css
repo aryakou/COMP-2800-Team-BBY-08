@@ -106,3 +106,12 @@ body{
   
   }
   
+@media (max-height: 451px){
+#myImg {
+width: 43vw;
+height: 70vh;
+border-radius: 50%;
+}
+    
+}
+  
