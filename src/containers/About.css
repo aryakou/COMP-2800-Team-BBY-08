@@ -69,7 +69,48 @@ body{
   padding: 5px;
 } */
 
+#root > div > div > div > div.ourstory > p {
+  margin: 1em;
+  font-size: 2rem;
+  text-align: justify;
+}
+
+.ourstory{
+  margin: 1em;
+  padding: 1em;
+}
+
+#root > div > div > div > div.ourstory > h2{
+  color: firebrick;
+}
+
+@media (min-width: 1101px){
+.aaa{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  
+}
 #myImg {
-  width: 200px;
+  width: 10vw;
   border-radius: 50%;
 }
+
+}
+@media (max-width: 1100px){
+  #myImg {
+    width: 43vw;
+    height: 50vh;
+    border-radius: 50%;
+  }
+  
+  }
+  
+  @media (max-height: 451px){
+    #myImg {
+      width: 43vw;
+      height: 70vh;
+      border-radius: 50%;
+    }
+    
+    }

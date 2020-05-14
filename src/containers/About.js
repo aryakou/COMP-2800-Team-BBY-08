@@ -1,6 +1,5 @@
 import React from "react";
 import "./About.css";
-import logo from './MML.png';
 import gsand from'./gsand.png';
 import mander from './gmander.png';
 import arash from './arash.png';
@@ -10,16 +9,13 @@ export default function About() {
     return (
 
 <div className="wrapper">
-  <h1>Our Team</h1>
   <div className="team">
-  <div className="team_member">
-      <div className="team_img">
-        <img src={logo} alt="Team_image"/>
-      </div>
-      <h3>Our Story</h3>
+  <div className="ourstory">
+      <h2>Our Story</h2>
       <p>Meta Molog is an app created for those struggling with getting through this unprecedented time. With Meta Molog, users can have confidence that their journal entries and attachments are 100% secured on the cloud and our privacy standard is an all time high. Users can sign up, log in and create entries that are only visible by them. With our multiple steps of authentication, Meta Molog is the best option on the market.
 </p>
     </div>
+    <div className='aaa'>
     <div className="team_member">
       <div className="team_img">
         <img src={arash} id="myImg" alt="Team_image"/>
@@ -51,6 +47,7 @@ export default function About() {
       <h3>Gurjot Mander</h3>
       <p className="role">Front-End Developer</p>
       <p>I am currently enrolled at BCIT in the CST program. I have just completed term 1 and moving on to term 2. I am a part of the frontend developing team, and enjoy taking part in this project.</p>
+    </div>
     </div>
   </div>
 

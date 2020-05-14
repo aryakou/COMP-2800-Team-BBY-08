@@ -9,7 +9,7 @@ import {
 import LoaderButton from "../components/LoaderButton";
 import { useAppContext } from "../libs/contextLib";
 import { useFormFields } from "../libs/hooksLib";
-import { onError } from "../libs/errorLib";
+//import { onError } from "../libs/errorLib";
 import "./Signup.css";
 import { Auth } from "aws-amplify";
 
@@ -24,6 +24,7 @@ export default function Signup() {
   const [newUser, setNewUser] = useState(null);
   const { userHasAuthenticated } = useAppContext();
   const [isLoading, setIsLoading] = useState(false);
+  const Swal = require('sweetalert2')
 
   function validateForm() {
     return (
@@ -50,7 +51,13 @@ export default function Signup() {
       setIsLoading(false);
       setNewUser(newUser);
     } catch (e) {
-      onError(e);
+      Swal.fire({
+        title: `${e['name']}`,
+        text: `${e['message']}`,
+        icon: 'warning',
+        confirmButtonText: 'OK'
+      })
+      //onError(e);
       setIsLoading(false);
     }
   }
@@ -67,7 +74,13 @@ export default function Signup() {
       userHasAuthenticated(true);
       history.push("/");
     } catch (e) {
-      onError(e);
+      Swal.fire({
+        title: `${e['name']}`,
+        text: `${e['message']}`,
+        icon: 'warning',
+        confirmButtonText: 'OK'
+      })
+      //onError(e);
       setIsLoading(false);
     }
   }

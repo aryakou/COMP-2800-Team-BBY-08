@@ -16,6 +16,7 @@ export default function Notes() {
     const [content, setContent] = useState("");
     const [isLoading, setIsLoading] = useState(false);
     const [isDeleting, setIsDeleting] = useState(false);
+    const Swal = require('sweetalert2')
 
   useEffect(() => {
     function loadNote() {
@@ -34,6 +35,12 @@ export default function Notes() {
         setContent(content);
         setNote(note);
       } catch (e) {
+/*         Swal.fire({
+          title: `${e['name']}`,
+          text: `${e['message']}`,
+          icon: 'warning',
+          confirmButtonText: 'OK'
+        }) */
         onError(e);
       }
     }
@@ -86,7 +93,13 @@ export default function Notes() {
       });
       history.push("/");
     } catch (e) {
-      onError(e);
+      Swal.fire({
+        title: `${e['name']}`,
+        text: `${e['message']}`,
+        icon: 'warning',
+        confirmButtonText: 'OK'
+      })
+      //onError(e);
       setIsLoading(false);
     }
   }  
@@ -111,7 +124,13 @@ export default function Notes() {
       await deleteNote();
       history.push("/");
     } catch (e) {
-      onError(e);
+      Swal.fire({
+        title: `${e['name']}`,
+        text: `${e['message']}`,
+        icon: 'warning',
+        confirmButtonText: 'OK'
+      })
+      //onError(e);
       setIsDeleting(false);
     }
   }  

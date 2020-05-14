@@ -10,6 +10,7 @@ import { onError } from "./libs/errorLib";
 
 
 
+
 function App() {
   const history = useHistory();
   const [isAuthenticating, setIsAuthenticating] = useState(true);
@@ -40,6 +41,10 @@ function App() {
 
     history.push("/login");
   }
+
+  //background color
+  document.body.style = 'background: #1A1E23;';
+
   return (
     !isAuthenticating && (
       <div className="App container">
@@ -83,6 +88,8 @@ function App() {
         >
           <Routes />
         </AppContext.Provider>
+
+
       </div>
     )
   );
