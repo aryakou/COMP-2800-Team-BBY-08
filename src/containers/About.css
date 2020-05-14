@@ -103,7 +103,6 @@ body{
     height: 50vh;
     border-radius: 50%;
   }
-  
   }
   
 @media (max-height: 451px){
@@ -112,6 +111,5 @@ width: 43vw;
 height: 70vh;
 border-radius: 50%;
 }
-    
 }
   

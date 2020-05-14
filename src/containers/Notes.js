@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { API, Storage } from "aws-amplify";
-//import { onError } from "../libs/errorLib";
+import { onError } from "../libs/errorLib";
 import { FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import LoaderButton from "../components/LoaderButton";
 import config from "../config";
@@ -35,13 +35,13 @@ export default function Notes() {
         setContent(content);
         setNote(note);
       } catch (e) {
-        Swal.fire({
+/*         Swal.fire({
           title: `${e['name']}`,
           text: `${e['message']}`,
           icon: 'warning',
           confirmButtonText: 'OK'
-        })
-        //onError(e);
+        }) */
+        onError(e);
       }
     }
 
