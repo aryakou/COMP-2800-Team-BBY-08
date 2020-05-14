@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { API, Storage } from "aws-amplify";
-import { onError } from "../libs/errorLib";
+//import { onError } from "../libs/errorLib";
 import { FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import LoaderButton from "../components/LoaderButton";
 import config from "../config";
@@ -16,6 +16,7 @@ export default function Notes() {
     const [content, setContent] = useState("");
     const [isLoading, setIsLoading] = useState(false);
     const [isDeleting, setIsDeleting] = useState(false);
+    const Swal = require('sweetalert2')
 
   useEffect(() => {
     function loadNote() {
@@ -34,7 +35,13 @@ export default function Notes() {
         setContent(content);
         setNote(note);
       } catch (e) {
-        onError(e);
+        Swal.fire({
+          title: `${e['name']}`,
+          text: `${e['message']}`,
+          icon: 'warning',
+          confirmButtonText: 'OK'
+        })
+        //onError(e);
       }
     }
 
@@ -86,7 +93,13 @@ export default function Notes() {
       });
       history.push("/");
     } catch (e) {
-      onError(e);
+      Swal.fire({
+        title: `${e['name']}`,
+        text: `${e['message']}`,
+        icon: 'warning',
+        confirmButtonText: 'OK'
+      })
+      //onError(e);
       setIsLoading(false);
     }
   }  
@@ -98,7 +111,7 @@ export default function Notes() {
     event.preventDefault();
   
     const confirmed = window.confirm(
-      "Are you sure you want to delete this note?"
+      "This day will manifest in history, do you wish to forget it?"
     );
   
     if (!confirmed) {
@@ -111,7 +124,13 @@ export default function Notes() {
       await deleteNote();
       history.push("/");
     } catch (e) {
-      onError(e);
+      Swal.fire({
+        title: `${e['name']}`,
+        text: `${e['message']}`,
+        icon: 'warning',
+        confirmButtonText: 'OK'
+      })
+      //onError(e);
       setIsDeleting(false);
     }
   }  

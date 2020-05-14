@@ -4,7 +4,7 @@ import { FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import LoaderButton from "../components/LoaderButton";
 import { useAppContext } from "../libs/contextLib";
 import { useFormFields } from "../libs/hooksLib";
-import { onError } from "../libs/errorLib";
+//import { onError } from "../libs/errorLib";
 import "./Login.css";
 
 export default function Login() {
@@ -14,6 +14,7 @@ export default function Login() {
     email: "",
     password: ""
   });
+  const Swal = require('sweetalert2')
 
   function validateForm() {
     return fields.email.length > 0 && fields.password.length > 0;
@@ -28,7 +29,13 @@ export default function Login() {
       await Auth.signIn(fields.email, fields.password);
       userHasAuthenticated(true);
     } catch (e) {
-      onError(e);
+      Swal.fire({
+        title: `${e['name']}`,
+        text: `${e['message']}`,
+        icon: 'warning',
+        confirmButtonText: 'OK'
+      })
+      //onError(e);
       setIsLoading(false);
     }
   }

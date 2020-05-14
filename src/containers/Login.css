@@ -9,4 +9,19 @@
       height: 100%;
     }
 
+    #root > div {
+      margin-left: auto;
+      margin-right: auto;
+      overflow: auto;
+    }
+
+    #root > div > nav{
+      padding: 1em;
+      margin: 1em;
+    }
+  }
+
+  .Login{
+    padding: 1em;
+    margin: 1em;
   }

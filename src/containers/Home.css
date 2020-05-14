@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+
 body {
   margin:0;
   padding: 0;
@@ -52,4 +55,29 @@ body {
 
   .App {
     margin:0;
+  }
+
+
+  #logo{
+
+    height: 40vh;
+    width: 40vw;
+  }
+
+  #root > div > div > div > h1 {
+    color: firebrick;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+ 
+  .notes{
+    text-align: center;
+    color: firebrick;
+  }
+
+  @media (max-height: 500px){
+    #logo{
+
+      height: 70vh;
+      width: 70vw;
+    }
   }
