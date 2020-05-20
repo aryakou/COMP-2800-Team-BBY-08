@@ -7,6 +7,42 @@ import Routes from "./Routes";
 import { AppContext } from "./libs/contextLib";
 import { Auth } from "aws-amplify";
 import { onError } from "./libs/errorLib";
+import {
+  FacebookShareButton,
+  GooglePlusShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
+  TelegramShareButton,
+  WhatsappShareButton,
+  PinterestShareButton,
+  VKShareButton,
+  OKShareButton,
+  RedditShareButton,
+  TumblrShareButton,
+  LivejournalShareButton,
+  MailruShareButton,
+  ViberShareButton,
+  WorkplaceShareButton,
+  EmailShareButton,
+} from 'react-share';
+import {
+  FacebookIcon,
+  TwitterIcon,
+  TelegramIcon,
+  WhatsappIcon,
+  GooglePlusIcon,
+  LinkedinIcon,
+  PinterestIcon,
+  VKIcon,
+  OKIcon,
+  RedditIcon,
+  TumblrIcon,
+  LivejournalIcon,
+  MailruIcon,
+  ViberIcon,
+  WorkplaceIcon,
+  EmailIcon,
+} from 'react-share';
 
 
 
@@ -66,6 +102,7 @@ function App() {
                     <NavItem>about us</NavItem>
                   </LinkContainer>
                   <NavItem onClick={handleLogout}>logout</NavItem>
+                  
                 </>
               ) : (
                 <>
@@ -78,6 +115,18 @@ function App() {
                   <LinkContainer to="/about">
                     <NavItem>about us</NavItem>
                   </LinkContainer>
+                  <NavItem> <TwitterShareButton url={"twitter.com"} title={'Check out this amazing note taking app! #MetaMolog https://master.dsznxcct79433.amplifyapp.com/'}>
+                  <TwitterIcon size={20} round />
+                  </TwitterShareButton>
+                  </NavItem>
+                  <NavItem> <RedditShareButton url={"reddit.com"} title={'Check out this amazing note taking app! #MetaMolog https://master.dsznxcct79433.amplifyapp.com/'}>
+                  <RedditIcon size={20} round />
+                  </RedditShareButton>
+                  </NavItem>
+                  <NavItem> <EmailShareButton url={"reddit.com"} title={'Check out this amazing note taking app! #MetaMolog https://master.dsznxcct79433.amplifyapp.com/'}>
+                  <EmailIcon size={20} round />
+                  </EmailShareButton>
+                  </NavItem>
                 </>
               )}
             </Nav>
