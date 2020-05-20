@@ -123,7 +123,7 @@ function App() {
                   <RedditIcon size={20} round />
                   </RedditShareButton>
                   </NavItem>
-                  <NavItem> <EmailShareButton url={"reddit.com"} title={'Check out this amazing note taking app! #MetaMolog https://master.dsznxcct79433.amplifyapp.com/'}>
+                  <NavItem> <EmailShareButton url={"Check out this amazing note taking app! #MetaMolog https://master.dsznxcct79433.amplifyapp.com/"} >
                   <EmailIcon size={20} round />
                   </EmailShareButton>
                   </NavItem>
