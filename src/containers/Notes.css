@@ -6,3 +6,9 @@
     height: 300px;
     font-size: 24px;
   }
+
+  #root > div > div{
+     padding: 1em;
+     margin:1em;
+  }
+
