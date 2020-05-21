@@ -115,7 +115,7 @@ function App() {
                   <LinkContainer to="/about">
                     <NavItem>about us</NavItem>
                   </LinkContainer>
-                  <NavItem> <TwitterShareButton url={"twitter.com"} title={'Check out this amazing note taking app! #MetaMolog https://master.dsznxcct79433.amplifyapp.com/'}>
+                  <NavItem> <TwitterShareButton url={"https://master.dsznxcct79433.amplifyapp.com/"} title={'Check out this amazing note taking app! #MetaMolog'}>
                   <TwitterIcon size={20} round />
                   </TwitterShareButton>
                     
