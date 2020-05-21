@@ -118,14 +118,15 @@ function App() {
                   <NavItem> <TwitterShareButton url={"twitter.com"} title={'Check out this amazing note taking app! #MetaMolog https://master.dsznxcct79433.amplifyapp.com/'}>
                   <TwitterIcon size={20} round />
                   </TwitterShareButton>
-                  </NavItem>
-                  <NavItem> <RedditShareButton url={"reddit.com"} title={'Check out this amazing note taking app! #MetaMolog https://master.dsznxcct79433.amplifyapp.com/'}>
-                  <RedditIcon size={20} round />
-                  </RedditShareButton>
-                  </NavItem>
-                  <NavItem> <EmailShareButton url={"Check out this amazing note taking app! #MetaMolog https://master.dsznxcct79433.amplifyapp.com/"} >
+                    
+                  <WhatsappShareButton url={"https://master.dsznxcct79433.amplifyapp.com/"} title={'Check out this amazing note taking app! #MetaMolog '}>
+                  <WhatsappIcon size={20} round />
+                  </WhatsappShareButton>
+
+                  <EmailShareButton url={"https://master.dsznxcct79433.amplifyapp.com/"}title={'Check out this amazing note taking app! #MetaMolog '} >
                   <EmailIcon size={20} round />
                   </EmailShareButton>
+                 
                   </NavItem>
                 </>
               )}

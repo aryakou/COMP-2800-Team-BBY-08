@@ -1,4 +1,4 @@
-export function calculateCost(storage) {
+export function costCalculator(storage) {
     const rate = storage <= 10
       ? 4
       : storage <= 100
