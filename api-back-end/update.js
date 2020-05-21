@@ -4,28 +4,35 @@ import dynamoDb from "./libs/dynamodb-lib";
 export const main = handler(async (event, context) => {
   const data = JSON.parse(event.body);
   const params = {
+    // We are reading the name of our DynamoDB table from our .env variable.
+
     TableName: process.env.tableName,
-    // 'Key' defines the partition key and sort key of the item to be updated
-    // - 'userId': Identity Pool identity id of the authenticated user
-    // - 'noteId': path parameter
+    // Key refers to our DB's partition and sort key (composite key) of the item
+    // that is to be updated.
     Key: {
+      // Identity Pool ID of the data owner.
       userId: event.requestContext.identity.cognitoIdentityId,
+      // Path parameter of the note under the data owner's ID.
       noteId: event.pathParameters.id
     },
-    // 'UpdateExpression' defines the attributes to be updated
-    // 'ExpressionAttributeValues' defines the value in the update expression
+    // UpdateExpression is the "getter" it is allowing update functions.
+    // ExpressionAttributeValues is the "setter" and always expression defining functions.
     UpdateExpression: "SET content = :content, attachment = :attachment",
     ExpressionAttributeValues: {
       ":attachment": data.attachment || null,
       ":content": data.content || null
     },
-    // 'ReturnValues' specifies if and how to return the item's attributes,
-    // where ALL_NEW returns all attributes of the item after the update; you
-    // can inspect 'result' below to see how it works with different settings
+    // ReturnValues is referring to if and how the attributes are to be returned,
+    // ALL_NEW is a string returning all attributes of the item post update
     ReturnValues: "ALL_NEW"
   };
 
   await dynamoDb.update(params);
 
-  return { status: true };
+  return {
+    status: true
+  };
 });
+
+// The yml file is updated and the update.main handler and events are added. The path including the noteId is added
+// along with method defined as PUT.

@@ -1,7 +1,13 @@
 org: bcitgroup8
 app: notes-app-api-app
+
+# The service option signifies the String that identifies our project. Changing this would cause it to be a whole
+# new project.
 service: notes-app-api
 
+# We are using the Serverless Framework which creates a single package containing all of our Lambda functions in
+# our application. By setting individually to true we signify to the Framework to create a single package per
+# Lambda function.
 package:
   individually: true
 
@@ -16,10 +22,15 @@ provider:
   stage: prod
   region: us-west-2
 
+# POST requests are handled at the /notes endpoint
+# Environment lets us define variables for our Lambda fucntion which are made available under
+# process.env we use `process.env.tableName` . 
   environment:
     tableName: notes
     stripeSecretKey: ${env:STRIPE_SECRET_KEY}
 
+# RoleStatements is our resource access rules. We are defining which resources the Lambda Functions we are utilizing
+# will be allowed access.
   iamRoleStatements:
     - Effect: Allow
       Action:
@@ -30,6 +41,8 @@ provider:
         - dynamodb:PutItem
         - dynamodb:UpdateItem
         - dynamodb:DeleteItem
+      # This is signifying that we are pointing to every DynamoDB table in the us-west-2 region.
+      # We could be more precise by listing the table name.
       Resource: "arn:aws:dynamodb:us-west-2:*:*"
 
 functions:
