@@ -24,9 +24,12 @@ Beyond your typical journal, access your secure quarantine chronicles from any d
 ## Built With
     
     - React
-    - AWS
     - AWS Lambda
-    -   
+    - AWS DynamoDB
+    - AWS Amplify
+    - AWS Cognito
+    - Serverless Framework
+    - S3
 
 ## Authors
     
@@ -41,3 +44,14 @@ MIT License
 Copyright (c) 2017 Anomaly Innovations
 
 ## Acknowledgements
+https://www.dynamodbguide.com/what-is-dynamo-db
+
+https://docs.aws.amazon.com/lambda/latest/dg/welcome.html
+
+https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html
+
+https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-awscli.html
+
+https://serverless-stack.com/chapters/backups-in-dynamodb.html
+
+https://serverless-stack.com/
