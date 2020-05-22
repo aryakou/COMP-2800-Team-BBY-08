@@ -24,6 +24,7 @@ export default function Signup() {
   const [newUser, setNewUser] = useState(null);
   const { userHasAuthenticated } = useAppContext();
   const [isLoading, setIsLoading] = useState(false);
+  //call sweet alert
   const Swal = require('sweetalert2')
 
   function validateForm() {
@@ -52,6 +53,7 @@ export default function Signup() {
       setNewUser(newUser);
     } catch (e) {
       Swal.fire({
+        //handle errors with dynamic alert
         title: `${e['name']}`,
         text: `${e['message']}`,
         icon: 'warning',
@@ -75,6 +77,7 @@ export default function Signup() {
       history.push("/");
     } catch (e) {
       Swal.fire({
+        //handle errors with dynamic alert
         title: `${e['name']}`,
         text: `${e['message']}`,
         icon: 'warning',

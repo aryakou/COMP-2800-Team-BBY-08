@@ -16,6 +16,7 @@ export default function Notes() {
     const [content, setContent] = useState("");
     const [isLoading, setIsLoading] = useState(false);
     const [isDeleting, setIsDeleting] = useState(false);
+    //call sweet alert
     const Swal = require('sweetalert2')
 
   useEffect(() => {
@@ -35,12 +36,6 @@ export default function Notes() {
         setContent(content);
         setNote(note);
       } catch (e) {
-/*         Swal.fire({
-          title: `${e['name']}`,
-          text: `${e['message']}`,
-          icon: 'warning',
-          confirmButtonText: 'OK'
-        }) */
         onError(e);
       }
     }
@@ -125,6 +120,7 @@ export default function Notes() {
       history.push("/");
     } catch (e) {
       Swal.fire({
+        //handle errors with dynamic alert
         title: `${e['name']}`,
         text: `${e['message']}`,
         icon: 'warning',
