@@ -1,8 +1,22 @@
 # Meta MoLog
-Beyond your typical journal, access your secure quarantine chronicles from any device. Features include: listed time, date, and serverless storage.
+Beyond your typical journal, access your secure quarantine chronicles from any device. Features include: listed time, date, and serverless storage. This was a great learning experience and we look forward to using the Serverless Framework again to further our knowledge in the future. We are hoping to further the fundamentals we learnt with another fun project.
 
+Generating optimized Lambda packages with Webpack
+Use ES7 syntax in your handler functions
+Use import and export
+Run API Gateway locally
+Use serverless offline start
+Support for unit tests
+Run npm test to run your tests
+Sourcemaps for proper error messages
+Error message show the correct line numbers
+Works in production with CloudWatch
+Lint your code with ESLint
+Add environment variables for your stages
+No need to manage Webpack or Babel configs
 ## Organisation
 The repository's master is organized into multiple folders that indicate. Libraries, tests, resources, public, and source folder which also contains other components and containers. Please contact us if you would like to further add to the repository.
+
 
 ## Getting Started
 
@@ -39,26 +53,31 @@ The repository's master is organized into multiple folders that indicate. Librar
  -->
 ## Built With
     
-    -  React
-    -  AWS Lambda
-    -  AWS DynamoDB
-    -  AWS Amplify
-    -  AWS Cognito
-    -  Serverless Framework
-    -  S3
+-  React
+-  AWS Lambda
+-  AWS DynamoDB
+-  AWS Amplify
+-  AWS Cognito
+-  S3
+-  Node.js 
+-  Serverless Framework
 
 ## API
     -  Please go to the STRIPE web domain to register and sign up for a test API Key for this application
     
 ## Authors
     
-    - Arash Tabrizi
-    - Arya Koukia
-    - Gurjot Sandher
-    - Gurjot Mander
+- Arash Tabrizi
+- Arya Koukia
+- Gurjot Sandher
+- Gurjot Mander
 
 ## For administrative access
-Please contact us at bcit-group8@outlook.com and we can review your case to be added as an admin.
+Please contact us at bcit-group8@outlook.com and we can review your case to be added as an admin. You will need access to do any configurations to the console.
+
+## Test Plan
+
+https://docs.google.com/spreadsheets/d/1BkcKR2hspwGpdoGKYYsquC5msGhEwA0490mZvFfCQ5o/edit#gid=0
 
 ## License
 MIT License
