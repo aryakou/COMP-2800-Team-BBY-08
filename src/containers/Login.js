@@ -14,6 +14,7 @@ export default function Login() {
     email: "",
     password: ""
   });
+  //call sweet alert
   const Swal = require('sweetalert2')
 
   function validateForm() {
@@ -29,6 +30,7 @@ export default function Login() {
       await Auth.signIn(fields.email, fields.password);
       userHasAuthenticated(true);
     } catch (e) {
+      //handle errors with dynamic alert
       Swal.fire({
         title: `${e['name']}`,
         text: `${e['message']}`,
