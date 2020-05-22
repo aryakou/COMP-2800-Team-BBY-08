@@ -1,6 +1,13 @@
+/**************************************************************
+CSS FOR HOME PAGE
+***************************************************************/
+
 @import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
 
 
+/**************************************************************
+Styling for body container
+***************************************************************/
 body {
   margin:0;
   padding: 0;
@@ -8,24 +15,40 @@ body {
   width: 100vw;
 }
 
+/**************************************************************
+Styling for lander and body containers within the page
+***************************************************************/
 .Home .lander {
     padding: 80px 0;
     text-align: center;
   }
   
+/**************************************************************
+Styling for lander and body container headers within the page
+***************************************************************/
   .Home .lander h1 {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
   }
   
+/**************************************************************
+Styling for lander and body container text within the page
+***************************************************************/
   .Home .lander p {
     color: #999;
   }
 
+/**************************************************************
+Styling for home container which shows the notes functionality
+***************************************************************/
   .Home{
     background-color: #fff;
     border-radius: 5px;
   }
+
+/**************************************************************
+Styling for notes headers
+***************************************************************/
   .Home .notes h4 {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
@@ -34,46 +57,73 @@ body {
     white-space: nowrap;
     text-overflow: ellipsis;
   }
+
+/**************************************************************
+Styling for lander and body containers within the page
+***************************************************************/
   .Home .notes p {
     color: #666;
   }
 
+/**************************************************************
+Styling for headers
+***************************************************************/
   h1{
     margin-top: 0;
   }
 
+/**************************************************************
+Styling for images
+***************************************************************/
   img {
     padding-top:10% ;
     width: 80vw;
     height: 32vh;
   }
 
+/**************************************************************
+Styling for p tags
+***************************************************************/
   p {
     padding-top: 10%;
     margin:0;
   }
 
+/**************************************************************
+Styling for main wrapper holding the app
+***************************************************************/
   .App {
     margin:0;
   }
 
-
+/**************************************************************
+Styling for logo svg
+***************************************************************/
   #logo{
 
     height: 40vh;
     width: 40vw;
   }
 
+/**************************************************************
+Styling for main header above the logo
+***************************************************************/
   #root > div > div > div > h1 {
     color: firebrick;
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
  
+/**************************************************************
+Styling for notes headers
+***************************************************************/
   .notes{
     text-align: center;
     color: firebrick;
   }
 
+/**************************************************************
+Media Query directed towards mobile
+***************************************************************/
   @media (max-height: 500px){
     #logo{
 

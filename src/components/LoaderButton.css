@@ -1,8 +1,15 @@
+/**************************************************************
+CSS for loader button
+***************************************************************/
 .LoaderButton .spinning.glyphicon {
     margin-right: 7px;
     top: 2px;
     animation: spin 1s infinite linear;
   }
+
+/**************************************************************
+Animation for button spin
+***************************************************************/
   @keyframes spin {
     from { transform: scale(1) rotate(0deg); }
     to { transform: scale(1) rotate(360deg); }

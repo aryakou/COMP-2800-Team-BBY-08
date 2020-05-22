@@ -1,3 +1,14 @@
+/**************************************************************
+CSS FOR ABOUT US PAGE
+***************************************************************/
+
+
+
+
+
+/**************************************************************
+Font import for app
+***************************************************************/
 @import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
 
 *{
@@ -6,21 +17,33 @@
   box-sizing: border-box;
 }
 
+/**************************************************************
+Styling for body container in the page
+***************************************************************/
 body{
   background: #fff;
   font-family: 'Josefin Sans', sans-serif;
 }
 
+/**************************************************************
+Styling for wrapper holding the bios and pictures in about us
+***************************************************************/
 .wrapper{
   margin-top: 50px;
 }
 
+/**************************************************************
+Styling for about us wrapper headers
+***************************************************************/
 .wrapper h1{
   font-size: 52px;
   margin-bottom: 60px;
   text-align: center;
 }
 
+/**************************************************************
+Styling for containers for individual team member
+***************************************************************/
 .team{
   display: flex;
   justify-content: center;
@@ -29,6 +52,9 @@ body{
   flex-wrap: wrap;
 }
 
+/**************************************************************
+Styling for Main frame holding the content of app
+***************************************************************/
 .team .team_member{
   background: #fff;
   margin: 5px;
@@ -40,12 +66,18 @@ body{
   position: relative;
 }
 
+/**************************************************************
+Styling for sub header of each team member container
+***************************************************************/
 .team .team_member h3{
   color: firebrick;
   font-size: 26px;
   margin-top: 50px;
 }
 
+/**************************************************************
+Styling for role header of each team member container
+***************************************************************/
 .team .team_member p.role{
   color: #ccc;
   margin: 12px 0;
@@ -53,37 +85,44 @@ body{
   text-transform: uppercase;
 }
 
+/**************************************************************
+Styling for image of each team member container
+***************************************************************/
 .team .team_member .Team_img{
   position: absolute;
   top: -50px;
   left: 50%;
   transform: translateX(-50%);
-  /* width: 50px;
-  height: 50px; */
   background: #fff;
 }
 
-/* .team .team_member .Team_img img{
-  width: 50px;
-  height: 150px;
-  padding: 5px;
-} */
-
+/**************************************************************
+Styling for bio text of each team member container
+***************************************************************/
 #root > div > div > div > div.ourstory > p {
   margin: 1em;
   font-size: 2rem;
   text-align: justify;
 }
 
+/**************************************************************
+Styling for introductory text in about us page
+***************************************************************/
 .ourstory{
   margin: 1em;
   padding: 1em;
 }
 
+/**************************************************************
+Styling for introductory text header in about us page
+***************************************************************/
 #root > div > div > div > div.ourstory > h2{
   color: firebrick;
 }
 
+/**************************************************************
+Media Query directed towards tablets and mobile
+***************************************************************/
 @media (min-width: 1101px){
 .aaa{
   display: grid;
@@ -100,6 +139,10 @@ body{
 }
 
 }
+
+/**************************************************************
+Media Query directed towards tablets and mobile
+***************************************************************/
 @media (max-width: 1100px){
 
   #root > div > div > div > div.ourstory > p {
@@ -116,7 +159,11 @@ body{
   }
   
   }
-  
+
+/**************************************************************
+Media Query directed towards mobile
+***************************************************************/
+
   @media (max-height: 451px){
     #myImg {
       width: 43vw;
@@ -127,6 +174,9 @@ body{
     }
 
 
+/**************************************************************
+Media Query directed towards mobile
+***************************************************************/
     @media (max-width: 451px){
       #myImg {
         width: 53vw;
