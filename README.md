@@ -38,6 +38,26 @@ The repository's master is organized into multiple folders that indicate. Librar
     -   Run  `npm install`
     -   Run  `npm start`  
 
+### Installation
+
+To create a new Serverless project.
+
+``` bash
+$ serverless install --url https://github.com/aryakou/COMP-2800-Team-BBY-08.git --name my-project
+```
+
+Enter the new directory
+
+``` bash
+$ cd your-project
+```
+
+Install the Node.js packages
+
+``` bash
+$ npm install
+```
+
 <!-- Need to add:
 
 -The readme.md is well formatted, easy to read. It has been modified to include ONE PARAGRAPH and possibly a short BULLETED LIST that describes how the repo is organized. This must be appended after the team information which is currently in the readme.md.
